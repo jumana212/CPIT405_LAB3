@@ -1,0 +1,206 @@
+/* =========================
+   General Page Styling
+   ========================= */
+
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+/* Header */
+
+/* ID selector */
+#profile-header {
+    background-color: #607ea8;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Element selector */
+h1 {
+    font-size: 36px;
+    margin: 0 0 5px 0;
+}
+
+/* Class selector */
+.job-title {
+    font-size: 18px;
+    margin: 0 0 25px 0;
+    color: #bd175f;
+}
+
+
+/* Navigation */
+
+/* Descendant selector */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+nav a:hover {
+    color: #60a5fa;
+    text-decoration: underline;
+}
+
+Main CV Container*/
+
+.cv-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+/* CV Sections*/
+
+.cv-section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+
+/* Element selector */
+h2 {
+    color: #1f2937;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #60a5fa;
+    padding-bottom: 8px;
+}
+
+
+/* Education */
+
+.education-item {
+    padding: 15px;
+    border-left: 4px solid #60a5fa;
+    background-color: #f8fafc;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.education-item p {
+    margin: 5px 0;
+}
+
+
+/* Skills */
+
+.skills-list {
+    padding-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+
+/* Projects*/
+
+.project-card {
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+.project-card a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+    color: #1d4ed8;
+}
+
+
+/* Contact */
+
+#contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer*/
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+/* Media query */
+@media (max-width: 600px) {
+
+    #profile-header {
+        padding: 30px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .job-title {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cv-container {
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+
+    .cv-section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}
