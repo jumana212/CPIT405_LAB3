@@ -20,6 +20,11 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <div class="controls">
+            <button id="theme-btn" class="btn">Dark Mode</button>
+            <button id="print-btn" class="btn">Print / Save as PDF</button>
+        </div>
     </header>
 
     <main class="cv-container">
@@ -27,11 +32,13 @@
         <section id="about" class="cv-section">
             <h2>About Me</h2>
             <p>
-                fiveth-year IT student at KAU with a growth mindset. Skilled in Java, Python, and Project
-             Management. Proven ability to lead and adapt through diverse roles in the college community,
-             seeking to contribute to the tech field with innovative solutions.
-
+                Fifth-year IT student at KAU with a growth mindset. Skilled in Java, Python, and Project Management.
             </p>
+            <p id="more-about" class="hidden">
+                Proven ability to lead and adapt through diverse roles in the college community,
+                seeking to contribute to the tech field with innovative solutions.
+            </p>
+            <button id="about-btn" class="btn">Show More</button>
         </section>
 
         <section id="education" class="cv-section">
@@ -59,20 +66,13 @@
         <section id="projects" class="cv-section">
             <h2>Projects</h2>
 
-            <article class="project-card">
-                <h3>CarWash+ | Java Automation System</h3>
-                <p>Developed a complete management system for a car wash service using Java.</p>
-            </article>
+            <div class="filters">
+                <button class="btn filter-btn active" data-category="All">All</button>
+                <button class="btn filter-btn" data-category="Web">Web</button>
+                <button class="btn filter-btn" data-category="Programming">Programming</button>
+            </div>
 
-            <article class="project-card">
-                <h3>Cryptography Algorithms |ECB vs CBC Analysis</h3>
-                <p>- Implemented a comparison script to analyze the differences between ECB and CBC
-                     encryption modes.
-                  - Demonstrated how the CBC "chaining" technique provides better security by preventing
-                    pattern recognition in encrypted data.
-                  - Analyzed the practical impact of using the same key for independent blocks versus
-                    chained blocks.</p>
-            </article>
+            <div id="projects-container"></div>
         </section>
 
         <section id="contact" class="cv-section">
@@ -97,8 +97,9 @@
     </main>
 
     <footer>
-        <p>© 2026 Your Name</p>
+        <p>© 2026 Jumana AlHazza</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-Main CV Container*/
+/* Main CV Container */
 
 .cv-container {
     max-width: 900px;
@@ -202,5 +202,141 @@ footer p {
 
     h2 {
         font-size: 21px;
+    }
+}
+
+/* =========================
+   Lab 5 - Interactive Features
+   ========================= */
+
+/* Buttons */
+.btn {
+    background-color: #607ea8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #bd175f;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls .btn {
+    background-color: white;
+    color: #607ea8;
+}
+
+/* Show More / Show Less */
+.hidden {
+    display: none;
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 15px;
+}
+
+.filter-btn.active {
+    background-color: #bd175f;
+}
+
+/* Dynamic project cards */
+#projects-container .project-card {
+    margin-bottom: 15px;
+}
+
+.category {
+    display: inline-block;
+    background-color: #60a5fa;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.tech {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+body.dark .cv-section,
+body.dark .project-card,
+body.dark .education-item {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+
+body.dark h2,
+body.dark h3,
+body.dark .education-item h3,
+body.dark .project-card h3 {
+    color: #f9fafb;
+}
+
+body.dark .tech {
+    color: #cbd5e1;
+}
+
+body.dark #contact a {
+    color: #93c5fd;
+}
+
+/* Print / Save as PDF */
+@media print {
+    nav,
+    .controls,
+    .filters,
+    #about-btn,
+    .btn {
+        display: none !important;
+    }
+
+    #more-about {
+        display: block !important;
+    }
+
+    body,
+    body.dark {
+        background: white;
+        color: black;
+    }
+
+    #profile-header {
+        background: white;
+        color: black;
+        padding: 10px;
+    }
+
+    .cv-section,
+    body.dark .cv-section,
+    .project-card,
+    body.dark .project-card {
+        background: white;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+
+    body.dark h2,
+    body.dark h3 {
+        color: black;
+    }
+
+    footer {
+        background: white;
+        color: black;
     }
 }
